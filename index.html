@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Holy Quran App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <h1>📖 Holy Quran</h1>
+
+    <div class="menu">
+        <button onclick="showHome()">Home</button>
+        <button onclick="showAbout()">About</button>
+    </div>
+</div>
+
+<input type="text" id="search" placeholder="Search Surah...">
+
+<!-- HOME -->
+<div id="home">
+
+    <h2>Surah List</h2>
+    <ul id="surahList"></ul>
+
+</div>
+
+<!-- SURAH PAGE -->
+<div id="surahPage" style="display:none;"></div>
+
+<!-- ABOUT PAGE -->
+<div id="aboutPage" style="display:none;">
+    <h2>About This App</h2>
+    <p>
+        This is a Holy Quran web app made for reading Surahs easily.
+        You can search Surahs, open Ayat and read Quran online.
+    </p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
